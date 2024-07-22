@@ -14,7 +14,7 @@ export function Header() {
             <img
               src="/images/logo.png"
               alt="logo"
-              className="mr-2 w-12 h-12 p-1 "
+              className="mr-2 w-25 h-12 p-1 "
             />
           </Link>
           <Typography
@@ -36,7 +36,7 @@ export function Header() {
               visibility: { xs: "hidden", sm: "visible" },
             }}
           >
-            <Link className="text-secondary-green" to="/">Wallet Enhancer</Link>
+            <Link className="text-secondary-green" to="/">Wen Wallet</Link>
           </Typography>
           <div className="hidden sm:block mr-2">
             <SearchWalletInput />
@@ -48,7 +48,7 @@ export function Header() {
         <p className="text-center text-sm">
           Check out our full suite of tools {" "}
           <a
-            href="https://labs.thurstober.com"
+            href="https://wen.tools"
             target="_blank"
             rel="noreferrer"
             className="font-semibold hover:text-green-500 transition"

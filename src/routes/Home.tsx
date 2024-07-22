@@ -209,7 +209,7 @@ export default function Home() {
     return (
       <main className="flex flex-col text-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full">
         <h1 className="text-4xl font-semibold text-primary-gray">
-          Welcome to Wallet Enhancer
+          Welcome to Wen Wallet
         </h1>
         <p className="font-semibold mt-4 text-gray-400 ">
           Please connect your wallet

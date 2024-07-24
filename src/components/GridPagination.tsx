@@ -40,7 +40,7 @@ const GridPagination: React.FC<GridPaginationProps> = ({
             borderRadius: "none",
             margin: "0 2px",
             "&.Mui-selected": {
-              backgroundColor: "#6EFFBB", 
+              backgroundColor: "#f57b14", 
               color: "black",
             },
           },

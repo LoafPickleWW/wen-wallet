@@ -1,6 +1,6 @@
-# Wallet Enhancer
+# Wen Wallet
 
-Wallet Enhancer is a platform to make it easier to interact with the assets (or NFTs) of Algorand blockchain.  It is a web application that allows you to manage wallets, send and receive assets, and interact with Algorand Standard Assets (ASAs).
+Wen Wallet is a platform to make it easier to interact with the assets (or NFTs) of Algorand blockchain.  It is a web application that allows you to manage wallets, send and receive assets, and interact with Algorand Standard Assets (ASAs).
 
 This project funded by Algorand Foundation's [xGov](https://xgov.algorand.foundation) program.
 
@@ -26,7 +26,7 @@ npm run start
 
 ## Deployment
 
-Changes that are merged to `main` will be deployed automatically to [Wallet Enhancer](https://we.thurstober.com/).
+Changes that are merged to `main` will be deployed automatically
 
 ## Contributing
 

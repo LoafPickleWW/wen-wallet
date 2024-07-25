@@ -25,7 +25,7 @@ export default function NetworkSelect() {
             checked={networkType === "mainnet"}
             onChange={handleChange}
             sx={{
-              "& .MuiSwitch-thumb": {
+              "& .MuiSwitch-thumb + .MuiSwitch-track": {
                 backgroundColor: "#f57b14",
               },
               "& .MuiSwitch-track": {

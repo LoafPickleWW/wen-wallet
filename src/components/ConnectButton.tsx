@@ -165,7 +165,7 @@ export default function ConnectButton() {
           color="success"
           className="hover:bg-secondary-green hover:text-white transition"
         >
-          <span className="font-sans text-secondary-green">Connect</span>
+          <span className="font-poppins text-secondary-green">Connect</span>
         </Button>
       ) : (
         <Tooltip title="Account" placement="bottom-start">
@@ -175,7 +175,7 @@ export default function ConnectButton() {
             aria-haspopup="true"
             aria-expanded={open ? "true" : undefined}
             onClick={handleClick}
-            sx={{ fontFamily: "sans", fontWeight: "bold", color: "white" }}
+            sx={{ fontFamily: "poppins", fontWeight: "bold", color: "white" }}
           >
             <FaWallet height={50} width={50} />
           </IconButton>

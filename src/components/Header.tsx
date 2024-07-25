@@ -20,7 +20,7 @@ export function Header() {
           <Typography
             component="div"
             sx={{
-              fontFamily: "Josefin Slab",
+              fontFamily: "Sofia Sans",
               flexGrow: 1,
               fontWeight: 400,
               fontSize: {
@@ -36,7 +36,7 @@ export function Header() {
               visibility: { xs: "hidden", sm: "visible" },
             }}
           >
-            <Link className="text-secondary-green" to="/">Wen Wallet</Link>
+            <Link className="text-secondary-green" to="/">wen wallet</Link>
           </Typography>
           <div className="hidden sm:block mr-2">
             <SearchWalletInput />

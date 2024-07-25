@@ -29,10 +29,10 @@ export default function NetworkSelect() {
                 backgroundColor: "#fff",
               },
               "& .MuiSwitch-track": {
-                backgroundColor: "#fff",
+                backgroundColor: "#f57b14",
               },
               "& .Mui-checked": {
-                color: "green",
+                color: "#f57b14",
               },
             }}
             style={{ color: "#f57b14" }}

@@ -20,7 +20,7 @@ export function Header() {
           <Typography
             component="div"
             sx={{
-              fontFamily: "Sofia Sans",
+              fontFamily: "Poppins",
               flexGrow: 1,
               fontWeight: 400,
               fontSize: {

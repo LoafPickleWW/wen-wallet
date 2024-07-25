@@ -19,7 +19,7 @@ module.exports = {
         xxs: "0.6rem",
       },
       fontFamily: {
-        sans: ["Josefin Slab", "sans"],
+        sans: ["Poppins", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
       },

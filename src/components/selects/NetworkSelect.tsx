@@ -26,10 +26,10 @@ export default function NetworkSelect() {
             onChange={handleChange}
             sx={{
               "& .MuiSwitch-thumb": {
-                backgroundColor: "#fff",
+                backgroundColor: "#f57b14",
               },
               "& .MuiSwitch-track": {
-                backgroundColor: "#f57b14",
+                backgroundColor: "#fff",
               },
               "& .Mui-checked": {
                 color: "#f57b14",

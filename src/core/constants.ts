@@ -19,7 +19,7 @@ export const INDEXER_URL =
 
 export const IPFS_ENDPOINT = "https://ipfs.algonode.xyz/ipfs";
 
-export const PAGE_SIZE = 30;
+export const PAGE_SIZE = 64;
 export const MAX_SELECT_COUNT = 64;
 
 export const TX_NOTE = "via wen.tools | wen wallet";

@@ -35,7 +35,7 @@ const DonationDialog = () => {
         size="medium"
         sx={{ 
           margin: "0 auto", 
-          marginTop: "1rem", 
+          display: "flex",
           color: "#f57b14", 
           border: "solid 1px #f57b14",
           transition: "color 0.3s ease, border 0.3s ease, opacity 0.3s ease",

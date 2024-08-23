@@ -31,8 +31,8 @@ export default function NetworkSelect() {
               "& .MuiSwitch-track": {
                 backgroundColor: "#fff",
               },
-              "& .Mui-checked + .MuiSwitch-track": {
-                backgroundcolor: "#f57b14",
+              "& .Mui-checked + span.MuiSwitch-track": {
+                backgroundColor: "#f57b14",
               },
             }}
             style={{ color: "#f57b14" }}

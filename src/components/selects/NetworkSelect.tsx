@@ -32,7 +32,7 @@ export default function NetworkSelect() {
                 backgroundColor: "#fff",
               },
               "& .Mui-checked + .MuiSwitch-track": {
-                color: "#f57b14",
+                backgroundcolor: "#f57b14",
               },
             }}
             style={{ color: "#f57b14" }}

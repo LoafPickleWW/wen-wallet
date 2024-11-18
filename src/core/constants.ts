@@ -17,7 +17,7 @@ export const INDEXER_URL =
     ? MAINNET_ALGONODE_INDEXER
     : TESTNET_ALGONODE_INDEXER;
 
-export const IPFS_ENDPOINT = "https://ipfs.algonode.xyz/ipfs";
+export const IPFS_ENDPOINT = "https://ipfs.algonode.dev/ipfs";
 
 export const PAGE_SIZE = 64;
 export const MAX_SELECT_COUNT = 64;

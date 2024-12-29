@@ -768,3 +768,10 @@ export async function createAssetTransferTransactions(
 export async function getGenesis() {
   return await algodClient.genesis().do();
 }
+
+export function formatWithCommas(input: number): string {
+  if (isNaN(input)) {
+    return input.toString();
+  }
+  return input.toLocaleString("en-US");
+}

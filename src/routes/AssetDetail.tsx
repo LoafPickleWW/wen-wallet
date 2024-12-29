@@ -20,6 +20,7 @@ import {
   createAssetOptoutTransactions,
   sendSignedTransaction,
   getAccountAssetData,
+  formatWithCommas,
 } from "../core/utils";
 import { CardMedia } from "@mui/material";
 import { toast } from "react-toastify";
@@ -167,13 +168,6 @@ export default function AssetDetail() {
           "Something went wrong"
       );
     }
-  }
-
-  function formatWithCommas(input: number): string {
-    if (isNaN(input)) {
-      return input.toString();
-    }
-    return input.toLocaleString("en-US");
   }
 
   return (

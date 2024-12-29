@@ -169,6 +169,13 @@ export default function AssetDetail() {
     }
   }
 
+  function formatWithCommas(input: number): string {
+    if (isNaN(input)) {
+      return input.toString();
+    }
+    return input.toLocaleString("en-US");
+  }
+
   return (
     <div className="bg-asset-detail-bg p-8 text-white rounded-lg mx-4 sm:mx-auto sm:max-w-3xl my-4 md:my-8">
       <h2 className="text-4xl font-bold mb-2 text-center">
@@ -245,7 +252,12 @@ export default function AssetDetail() {
                 {shortenAddress(assetData.params.creator)}
               </a>
             </p>
-            <p className="text-xs">Supply: {assetData.params.total}</p>
+            <p className="text-xs">
+              Supply:{" "}
+              {formatWithCommas(
+                assetData.params.total / Math.pow(10, assetData.params.decimals)
+              )}
+            </p>
             <p className="text-xs">Decimals: {assetData.params.decimals}</p>
             <p className="text-xs">
               Clawback:{" "}
@@ -343,7 +355,11 @@ export default function AssetDetail() {
                           </p>
                           {trait.category === "external_url" ? (
                             <a
-                              href={trait.value.toLowerCase().startsWith("http") ? trait.value : `https://${trait.value}`}
+                              href={
+                                trait.value.toLowerCase().startsWith("http")
+                                  ? trait.value
+                                  : `https://${trait.value}`
+                              }
                               target="_blank"
                               rel="noreferrer noopener"
                               className="text-gray-50 break-all hover:text-green-400 transition-all"

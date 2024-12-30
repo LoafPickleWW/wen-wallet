@@ -30,7 +30,9 @@ const AssetSendDialog: React.FC<AssetSendDialogProps> = ({
   asset,
   balance,
 }) => {
-  const [amount, setAmount] = useState(balance.toString());
+  const [amount, setAmount] = useState(
+    (balance / 10 ** asset.params.decimals).toString()
+  );
   const [receiver, setReceiver] = useState("");
   const [loading, setLoading] = useState(false);
 

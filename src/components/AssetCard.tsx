@@ -31,6 +31,7 @@ import {
   ipfsToUrl,
   sendSignedTransaction,
   shortenAddress,
+  formatWithCommas,
 } from "../core/utils";
 import useAssetStore from "../store/assetStore";
 import useConnectionStore from "../store/connectionStore";
@@ -296,7 +297,7 @@ const AssetImageCard = ({
                 )}
                 <Chip
                   label={`Balance: ${
-                    asset.amount / 10 ** assetData.params.decimals
+                    formatWithCommas(asset.amount / 10 ** assetData.params.decimals)
                   }`}
                   size="small"
                   className="absolute bottom-2 right-2"

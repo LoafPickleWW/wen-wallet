@@ -20,6 +20,7 @@ import {
   createAssetOptoutTransactions,
   sendSignedTransaction,
   getAccountAssetData,
+  formatWithCommas,
 } from "../core/utils";
 import { CardMedia } from "@mui/material";
 import { toast } from "react-toastify";
@@ -245,7 +246,12 @@ export default function AssetDetail() {
                 {shortenAddress(assetData.params.creator)}
               </a>
             </p>
-            <p className="text-xs">Supply: {assetData.params.total}</p>
+            <p className="text-xs">
+              Supply:{" "}
+              {formatWithCommas(
+                assetData.params.total / Math.pow(10, assetData.params.decimals)
+              )}
+            </p>
             <p className="text-xs">Decimals: {assetData.params.decimals}</p>
             <p className="text-xs">
               Clawback:{" "}
@@ -343,7 +349,11 @@ export default function AssetDetail() {
                           </p>
                           {trait.category === "external_url" ? (
                             <a
-                              href={trait.value.toLowerCase().startsWith("http") ? trait.value : `https://${trait.value}`}
+                              href={
+                                trait.value.toLowerCase().startsWith("http")
+                                  ? trait.value
+                                  : `https://${trait.value}`
+                              }
                               target="_blank"
                               rel="noreferrer noopener"
                               className="text-gray-50 break-all hover:text-green-400 transition-all"
